@@ -7,9 +7,7 @@ interface Props {
 
 const MaxWithWrapper = ({ children, extraClassName }: Props) => {
   return (
-    <div
-      className={`w-full max-w-7xl mx-auto items-center border border-red-300 ${extraClassName}`}
-    >
+    <div className={`w-full max-w-7xl mx-auto items-center ${extraClassName}`}>
       {children}
     </div>
   );

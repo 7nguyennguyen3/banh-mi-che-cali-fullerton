@@ -10,7 +10,8 @@ import {
   ShoppingCart,
 } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const LINKS = [
   { title: "Menu", href: "/menu", icon: <Book size={20} /> },
@@ -23,6 +24,11 @@ const LINKS = [
 const NavBar = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   const [selectedLink, setSelectedLink] = useState<string>("");
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setSelectedLink(pathname);
+  }, [pathname]);
 
   const handleLinkClick = (href: string) => {
     setSelectedLink(href);
@@ -32,11 +38,11 @@ const NavBar = () => {
   return (
     <>
       <nav className="w-full bg-white shadow-md fixed top-0 left-0 right-0 z-50">
-        <section className="max-w-7xl flex justify-between items-center mx-auto py-4 px-6">
+        <section className="max-w-7xl flex justify-between items-center mx-auto py-4 px-4 sm:px-6">
           <Link
             href="/"
             className="flex items-center"
-            onClick={() => setSelectedLink("")}
+            onClick={() => setSelectedLink("/")}
           >
             <img
               src="/logo-2.png"
@@ -49,8 +55,8 @@ const NavBar = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-lg font-semibold flex items-center gap-2 transition-colors ${
-                  selectedLink === link.href && selectedLink !== ""
+                className={`text-lg font-semibold flex items-center gap-2 ${
+                  selectedLink === link.href
                     ? "text-yellow-500"
                     : "text-gray-800 hover:text-yellow-500"
                 }`}
@@ -89,7 +95,7 @@ const NavBar = () => {
                     href={link.href}
                     className={`text-xl font-semibold flex items-center gap-4
                       mb-3 transition-colors ${
-                        selectedLink === link.href && selectedLink !== ""
+                        selectedLink === link.href
                           ? "text-yellow-500"
                           : "text-gray-800 hover:text-yellow-500"
                       }`}
