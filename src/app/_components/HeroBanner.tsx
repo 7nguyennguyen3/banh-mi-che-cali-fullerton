@@ -10,7 +10,6 @@ const IMAGES_ARRAY = [
   "/spring-roll.jpg",
   "/pho-tai.jpg",
   "/bun-bo-hue-2.jpg",
-  "/good-pic.jpg",
 ];
 
 const HeroBanner = () => {

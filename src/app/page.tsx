@@ -1,3 +1,4 @@
+"use client";
 import GetLocationText from "./_components/GetLocationText";
 import HeroBanner from "./_components/HeroBanner";
 import OurValue from "./_components/OurValue";

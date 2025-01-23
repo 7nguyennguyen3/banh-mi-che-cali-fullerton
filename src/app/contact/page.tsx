@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Twitter, Mail } from "lucide-react";
+import { Facebook, Instagram, Mail } from "lucide-react";
 import Banner from "../_components/Banner";
 import GetLocation from "../_components/GetLocation";
 
@@ -28,7 +28,6 @@ const ContactPage = () => {
             <div className="flex gap-3 justify-center md:justify-start">
               <Facebook size={30} className="text-blue-600" />
               <Instagram size={30} className="text-pink-600" />
-              <Twitter size={30} className="text-blue-400" />
               <Mail size={30} className="text-gray-600" />
             </div>
           </div>

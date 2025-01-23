@@ -12,7 +12,6 @@ const GALLERY_IMAGES = [
   "/to-go-food.jpg",
   "/spring-roll.jpg",
   "/curry.jpg",
-  "/pho-dac-biet.jpg",
   "/banh-mi.jpg",
   "/che.jpg",
   "/location-2.jpg",
@@ -20,6 +19,7 @@ const GALLERY_IMAGES = [
   "/grand-opening.jpg",
   "/interior.jpg",
   "/interior-2.jpg",
+  "/interior-3.jpg",
 ];
 
 const GalleryPage = () => {

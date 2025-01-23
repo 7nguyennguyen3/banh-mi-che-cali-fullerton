@@ -4,7 +4,7 @@ import Banner from "../_components/Banner";
 const AboutUsPage = () => {
   return (
     <div className="min-h-screen">
-      <Banner imgSrc="/bun-bo-hue-2.jpg" pageTitle="About Us" />
+      <Banner imgSrc="/interior-3.jpg" pageTitle="About Us" />
       <div className="w-[90%] mx-auto">
         <div className="flex flex-col items-center justify-center py-12 max-w-7xl mx-auto">
           <h2 className="text-4xl font-semibold pb-10">Our Story</h2>

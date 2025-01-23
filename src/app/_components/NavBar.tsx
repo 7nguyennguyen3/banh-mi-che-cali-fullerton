@@ -87,11 +87,12 @@ const NavBar = () => {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`text-lg font-semibold flex items-center gap-2 transition-colors ${
-                      selectedLink === link.href && selectedLink !== ""
-                        ? "text-yellow-500"
-                        : "text-gray-800 hover:text-yellow-500"
-                    }`}
+                    className={`text-xl font-semibold flex items-center gap-4
+                      mb-3 transition-colors ${
+                        selectedLink === link.href && selectedLink !== ""
+                          ? "text-yellow-500"
+                          : "text-gray-800 hover:text-yellow-500"
+                      }`}
                     onClick={() => handleLinkClick(link.href)}
                   >
                     {link.icon}

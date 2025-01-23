@@ -33,7 +33,7 @@ const MenuPage = () => {
   return (
     <div className="relative">
       <section className="min-h-screen flex flex-col items-center justify-center">
-        <Banner imgSrc="/bun-bo-hue.jpg" pageTitle="Menu" />
+        <Banner imgSrc="/pho-hai-san.jpg" pageTitle="Menu" />
         <div
           style={{
             backgroundImage: 'url("/restaurant-pattern.webp")',
